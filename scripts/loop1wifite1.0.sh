@@ -48,7 +48,7 @@ sudo airmon-ng start wlan1; sleep 1
 i=0
 while [ $i -gt "-1" ]; do
 	#sudo wifite -i wlan1mon -mac -p 10 --skip-crack --no-pmkid --daemon --clients-only
-	lxterminal -e "sh /home/pi/scripts/worms.sh"
+	lxterminal -e "sh /home/kali/scripts/worms.sh"
 	i=$(($i+1))
 	echo "${i} worms crawling. Slipping in another one in 10."; sleep 10
 
