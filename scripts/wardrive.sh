@@ -1,8 +1,8 @@
 #!/bin/bash
 pulseaudio --start
 paplay wav/wardriveArmed.wav
-sudo mv /home/pi/*.netxml /home/pi/netxml/
-sudo rm /home/pi/Kismet*
+sudo mv /home/kali/*.netxml /home/pi/netxml/
+sudo rm /home/kali/Kismet*
 sudo systemctl stop gpsd.socket; sleep 1
 sudo systemctl disable gpsd.socket; sleep 1
 sudo gpsd /dev/ttyACM0 -F /var/run/gpsd.sock
