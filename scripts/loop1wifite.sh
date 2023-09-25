@@ -41,11 +41,11 @@ done
 i=0
 sudo airmon-ng check kill; sleep 1
 sudo airmon-ng start wlan1; sleep 1
-lxterminal -e "sh /home/pi/scripts/worms.sh"
+lxterminal -e "sh ~/scripts/worms.sh"
 while [ $i -gt "-1" ]; do
 	clear
 	#sudo wifite -i wlan1mon -mac -p 10 --skip-crack --no-pmkid --daemon --clients-only
-	hs=$(ls /home/pi/hs/ | wc -l)
+	hs=$(ls /home/kali/hs/ | wc -l)
 	i=$(($i+1))
 	echo "${i} worms crawling. ${hs} handshakes captured so far."; sleep 10
 done
