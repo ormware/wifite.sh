@@ -44,7 +44,7 @@ while [ $i -eq $true ]; do
                 sudo rm /home/pi/scripts/airodump/*
                 tmux split-window -v " sh ~/scripts/wifimon.sh"
                 wifiMon="${GRE}Wifi monitor${NC}"
-                swifiMon="[!] sudo airodump-ng wlan1mon -w /home/pi/scripts/airodump/cap --output-format cap --channel x --bssid x"
+                swifiMon="[!] sudo airodump-ng wlan1mon -w /home/kali/scripts/airodump/cap --output-format cap --channel x --bssid x"
                 clear;
                 ;;
                 3)
