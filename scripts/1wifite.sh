@@ -62,17 +62,16 @@ fi
 #sudo iwconfig wlan0 mode managed && sleep 1
 #sudo ifconfig wlan0 up && echo "wlan0 restored!"
 
-zzz=0
-
-echo "${GRE}Zzz for 10 before we exit...${NC}"
-while [ $zzz -ne 0 ]
-do
-        echo $zzz
-        zzz=$(($zzz-1))
-        sleep 1
-        #expr $zzz - 1
-done
+#zzz=0
+#echo "${GRE}Zzz for 10 before we exit...${NC}"
+#while [ $zzz -ne 0 ]
+#do
+#        echo $zzz
+#        zzz=$(($zzz-1))
+#        sleep 1
+#        #expr $zzz - 1
+#done
 
 #sleep infinity
 
-#sudo sh /home/pi/1wifite.sh
+sudo sh ~/scripts/1wifite.sh
