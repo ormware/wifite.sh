@@ -28,7 +28,7 @@ echo "${RED}goes!${NC}"
 sudo airmon-ng check kill > /dev/null 2>&1; sleep 1;    echo " [${GRE}+${NC}] Killing background processes."
 sudo airmon-ng start wlan1 > /dev/null 2>&1; sleep 1;   echo " [${GRE}+${NC}] Entering monitoring mode."
 
-sudo wifite -i wlan1mon -mac --daemon --skip-crack -v --no-pmkid #maybe add > dev/null
+sudo wifite -i wlan0mon -mac --daemon --skip-crack -v --no-pmkid #maybe add > dev/null
 if [ $? -eq 1 ]
 then
         echo "${RED}Wifite missing${NC}. ${YEL}Installing${NC}..."
