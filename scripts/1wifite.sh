@@ -57,7 +57,7 @@ then
         make > /dev/null 2>&1; echo " [${YEL}+${NC}] Bully made."
         sudo make install > /dev/null 2>&1; echo " [${GRE}+${NC}] Bully installed${NC}."
 #Bully done
-        sh /home/pi/scripts/1wifite.sh
+        sh ~/scripts/1wifite.sh
 fi
 #sudo iwconfig wlan0 mode managed && sleep 1
 #sudo ifconfig wlan0 up && echo "wlan0 restored!"
